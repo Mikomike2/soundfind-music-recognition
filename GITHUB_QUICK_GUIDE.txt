@@ -1,0 +1,116 @@
+================================================================================
+   📦 PUSH TO GITHUB - QUICK REFERENCE CARD
+================================================================================
+
+STEP 1: INSTALL GIT (If not installed)
+---------------------------------------
+Download from: https://git-scm.com/download/win
+Install with default settings
+Restart terminal after installation
+
+
+STEP 2: CREATE GITHUB REPOSITORY
+---------------------------------
+Go to: https://github.com/new
+
+Repository name: soundfind-music-recognition (or your choice)
+Description: 🎵 AI-Powered Song Recognition app with Next.js 15
+Visibility: Public (recommended)
+Add README: NO (we have one)
+Add .gitignore: NO (we have one)
+Add license: YES - MIT License
+
+Click "Create repository"
+
+
+STEP 3: RUN THESE COMMANDS
+---------------------------
+Open PowerShell in project folder, then run:
+
+# Navigate to project
+cd "c:\Users\miki\Desktop\AI-Powered Song Recognition"
+
+# Initialize git
+git init
+
+# Configure git (replace with your info)
+git config --global user.name "Your Name"
+git config --global user.email "your-email@example.com"
+
+# Add all files
+git add .
+
+# Create first commit
+git commit -m "Initial commit: AI-Powered Song Recognition app"
+
+# Add remote (REPLACE YOUR_USERNAME and REPO_NAME!)
+git remote add origin https://github.com/YOUR_USERNAME/REPO_NAME.git
+
+# Set main branch
+git branch -M main
+
+# Push to GitHub
+git push -u origin main
+
+
+STEP 4: DEPLOY TO VERCEL
+-------------------------
+Go to: https://vercel.com/new
+Import your GitHub repository
+Add environment variable: AUDD_API_TOKEN = test
+Click Deploy
+
+
+================================================================================
+   ALTERNATIVE: USE GITHUB DESKTOP (EASIER!)
+================================================================================
+
+Download: https://desktop.github.com
+Install and sign in
+Add existing repository (select your project folder)
+Publish to GitHub
+Much simpler than command line!
+
+
+================================================================================
+   TROUBLESHOOTING
+================================================================================
+
+"git is not recognized"
+→ Install Git from https://git-scm.com/download/win and restart terminal
+
+"Authentication failed"  
+→ Use Personal Access Token from https://github.com/settings/tokens
+
+"Permission denied"
+→ Check repository URL is correct
+
+
+================================================================================
+   WHAT GETS PUSHED
+================================================================================
+
+✅ All source code
+✅ Configuration files
+✅ Documentation
+✅ README.md
+
+❌ node_modules/ (too large, excluded by .gitignore)
+❌ .next/ (build files)
+❌ .env.local (your API key is SAFE!)
+
+
+================================================================================
+   YOUR PROJECT IS READY!
+================================================================================
+
+Files: ✅ Complete
+Build: ✅ Tested
+Docs: ✅ Created
+.gitignore: ✅ Configured
+
+Just install Git, create GitHub repo, and push!
+
+Need detailed help? See PUSH_TO_GITHUB.md
+
+================================================================================
